@@ -20,7 +20,7 @@
 # *
 # *
 
-cmake_minimum_required(VERSION 2.8)
+cmake_minimum_required(VERSION 2.8.18)
 project(djiosdk-core)
 
 # We want to use INTERFACE_LINK_LIBRARIES property to 
