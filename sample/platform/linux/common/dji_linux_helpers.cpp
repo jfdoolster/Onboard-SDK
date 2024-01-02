@@ -27,7 +27,7 @@
  *
  */
 
-#include <dji_linux_helpers.hpp>
+#include "dji_linux_helpers.hpp"
 
 using namespace DJI::OSDK;
 

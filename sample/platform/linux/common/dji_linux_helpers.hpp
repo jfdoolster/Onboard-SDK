@@ -32,7 +32,7 @@
 #define ONBOARDSDK_HELPERS_H
 
 #include <fstream>
-#include <dji_linux_environment.hpp>
+#include "dji_linux_environment.hpp"
 #include <dji_vehicle.hpp>
 
 class LinuxSetup
