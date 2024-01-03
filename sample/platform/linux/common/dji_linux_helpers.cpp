@@ -40,7 +40,7 @@ LinuxSetup::LinuxSetup(int argc, char** argv, bool enableAdvancedSensing)
   this->useAdvancedSensing  = enableAdvancedSensing;
 
   setupEnvironment(argc, argv);
-  initVehicle();
+  //initVehicle();
 }
 
 LinuxSetup::~LinuxSetup()
