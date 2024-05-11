@@ -20,10 +20,11 @@
 # *
 # *
 
-cmake_minimum_required(VERSION 2.8.18)
+#cmake_minimum_required(VERSION 2.8.18)
+cmake_minimum_required(VERSION 3.5)
 project(djiosdk-core)
 
-# We want to use INTERFACE_LINK_LIBRARIES property to 
+# We want to use INTERFACE_LINK_LIBRARIES property to
 # propagate link dependencies
 cmake_policy(SET CMP0022 NEW)
 
@@ -122,10 +123,10 @@ SET(MODULE_BUILD_INTERFACE "")
 SET(MODULE_INSTALL_INTERFACE "")
 
 ## Advanced Sensing
-if(ADVANCED_SENSING) 
+if(ADVANCED_SENSING)
   # Add a cmake file to find libusb
   set(CMAKE_MODULE_PATH ${CURRENT_CMAKE_MODULE_PATH})
-  
+
   find_package(LibUSB REQUIRED)
   find_package(AdvancedSensing QUIET)
   if(NOT ADVANCED_SENSING_FOUND)
@@ -282,8 +283,8 @@ if(ADVANCED_SENSING)
   install(FILES ${ADVANCED_SENSING_LIBRARY}
         DESTINATION "${INSTALL_LIB_DIR}" COMPONENT shlib)
 
-  set(OSDK_LIB_HEADERS 
-      ${OSDK_LIB_HEADERS} 
+  set(OSDK_LIB_HEADERS
+      ${OSDK_LIB_HEADERS}
       ${ADVANCED_SENSING_INCLUDE_DIRS}/dji_advanced_sensing.hpp
       ${ADVANCED_SENSING_INCLUDE_DIRS}/dji_advanced_sensing_protocol.hpp
       ${ADVANCED_SENSING_INCLUDE_DIRS}/linux_usb_device.hpp

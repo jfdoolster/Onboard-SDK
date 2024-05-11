@@ -1,4 +1,5 @@
-cmake_minimum_required(VERSION 2.8.18)
+#cmake_minimum_required(VERSION 2.8.18)
+cmake_minimum_required(VERSION 3.5)
 project(stereo-vision-single-thread-sample)
 
 # Try to see if user has OpenCV installed
