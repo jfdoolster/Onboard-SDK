@@ -1,5 +1,4 @@
-#cmake_minimum_required(VERSION 3.5)
-cmake_minimum_required(VERSION 2.8.18)
+cmake_minimum_required(VERSION 3.5)
 project(camera-stream-target-tracking-sample)
 
 # Try to see if user has OpenCV installed
